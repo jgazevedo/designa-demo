@@ -23,6 +23,11 @@
     <div id="msg">Carregando…</div>
   </div>
   <script>
+    // Endereço do servidor do modo online (wss://…/ws). Vazio = modo online desligado nesta página.
+    // Em teste local (http://localhost) o jogo usa ws://localhost:5080/ws automaticamente.
+    window.DESIGNA_SERVER = "";
+  </script>
+  <script>
     var buildUrl = "Build";
     var config = {
       dataUrl: buildUrl + "/WebGL.data.unityweb",
